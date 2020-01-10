@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Image Extraction JavaScript</h2>
+
+<button type="button" onclick="download()">Click Me!</button>
+
+<script>
+function download() {
+  var pStart = 2;
+  var pEnd = 117;
+  var urlStart = "https://mediaroomlive.blob.core.windows.net/03-08-2019-909975/PIC"
+  var urlValue;
+  var urlEnd = ".JPG";
+  var t;
+  var done = false;
+
+  for (; start < end; pStart++) {
+
+    urlValue = ('0000' + pStart).slice(-4);
+    t = urlStart + urlValue + urlEnd;
+    window.open(t);
+    if(i == end){
+      done = true;
+    }
+  }
+  if(done == true){
+    alert("Complete");
+  }else {
+    alert("Not Complete")
+  }
+
+}
+
+</script>
+
+</body>
+</html>
